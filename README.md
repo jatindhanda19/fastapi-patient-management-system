@@ -1,8 +1,8 @@
-# 🏥 Patient Management API
+#  Patient Management API
 
 A simple REST API built with FastAPI to manage patient records with CRUD operations, automatic BMI calculation, sorting, and input validation.
 
-## 🚀 Features
+##  Features
 
 - Add, view, update, and delete patients
 - View patient by ID
@@ -11,7 +11,7 @@ A simple REST API built with FastAPI to manage patient records with CRUD operati
 - Input validation with Pydantic
 - Interactive API docs with Swagger
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - FastAPI
@@ -19,7 +19,7 @@ A simple REST API built with FastAPI to manage patient records with CRUD operati
 - Uvicorn
 - JSON
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 patient-management-api/
@@ -27,20 +27,20 @@ patient-management-api/
 ├── patient.json
 ├── requirements.txt
 └── README.md
-
-⚙️ Installation
+```
+ Installation
 git clone https://github.com/your-username/patient-management-api.git
 cd patient-management-api
 pip install -r requirements.txt
 
-▶️ Run the Application
+ Run the Application
 uvicorn main:app --reload
 
-📘 API Documentation
+API Documentation
 Swagger UI: http://127.0.0.1:8000/docs
 ReDoc: http://127.0.0.1:8000/redoc
 
-📌 API Endpoints
+ API Endpoints
 Method	Endpoint	   Description
 GET	    /view	       Get all patients
 GET	    /patient/{id}	Get patient by ID
@@ -49,7 +49,7 @@ POST	  /add	        Add a patient
 PUT	    /edit/{id}	  Update a patient
 DELETE	/delete/{id}	Delete a patient
 
-🧾 Sample Request
+Sample Request
 {
   "id": "P001",
   "name": "Jatin",
@@ -59,21 +59,21 @@ DELETE	/delete/{id}	Delete a patient
   "height": 175,
   "weight": 68
 }
-📄 Example patient.json
+Example patient.json
 {
   "patients": []
 }
 
-📦 Requirements
+ Requirements
 fastapi
 uvicorn
 pydantic
 
-💡 Future Improvements
+ Future Improvements
 -SQLite database integration
 -JWT authentication
 -Unit testing with pytest
 -Docker support
 
-👨‍💻 Author
+Author
 Jatin Dhanda
